@@ -17,8 +17,7 @@
         app:layout_constraintEnd_toStartOf="@+id/frame2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_weight="1">
+        app:layout_constraintTop_toTopOf="parent">
 
     </FrameLayout>
 
@@ -28,23 +27,21 @@
         android:layout_height="0dp"
         android:background="@color/color_frame4"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/frame3"
+        app:layout_constraintEnd_toStartOf="@+id/frame3"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frame1"
-        app:layout_constraintVertical_weight="1" />
+        app:layout_constraintTop_toBottomOf="@+id/frame1" />
 
     <FrameLayout
         android:id="@+id/frame2"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@color/color_frame2"
-        app:layout_constraintBottom_toTopOf="@id/frame3"
+        app:layout_constraintBottom_toTopOf="@+id/frame3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@id/frame1"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_weight="1">
+        app:layout_constraintStart_toEndOf="@+id/frame1"
+        app:layout_constraintTop_toTopOf="parent">
 
     </FrameLayout>
 
@@ -57,8 +54,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/frame4"
-        app:layout_constraintTop_toBottomOf="@id/frame2"
-        app:layout_constraintVertical_weight="1">
+        app:layout_constraintTop_toBottomOf="@+id/frame2">
 
     </FrameLayout>
 

@@ -9,6 +9,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -31,7 +32,15 @@ public class MainActivity extends FragmentActivity implements OnButtonClickListe
 
         if(savedInstanceState == null){
             frames = new int[]{R.id.frame1, R.id.frame2, R.id.frame3, R.id.frame4};
+            /**/
+            Log.i("--","~~~~~~~~~~~~~~~~~~~~~~~~~~");
+            Log.i("Ramka1 ", Integer.toString(frames[0]));
+            Log.i("Ramka2 ", Integer.toString(frames[1]));
+            Log.i("Ramka3 ", Integer.toString(frames[2]));
+            Log.i("Ramka4 ", Integer.toString(frames[3]));
             hidden = false;
+
+            sequence = new int[]{0,1,2,3};
 
             Fragment[] fragments = new Fragment[]{new Fragment1(), new Fragment2(), new Fragment3(), new Fragment4()};
             FragmentManager fragmentManager = getSupportFragmentManager();
@@ -133,6 +142,12 @@ public class MainActivity extends FragmentActivity implements OnButtonClickListe
     private void newFragments()
     {
         Fragment[] newFragments = new Fragment[]{new Fragment1(), new Fragment2(), new Fragment3(), new Fragment4()};
+
+        Log.i("--","---------------");
+        Log.i("sekwencja1 ", Integer.toString(sequence[0]));
+        Log.i("sekwencja2 ", Integer.toString(sequence[0]));
+        Log.i("sekwencja3 ", Integer.toString(sequence[0]));
+        Log.i("sekwencja4 ", Integer.toString(sequence[0]));
 
         Fragment[] inSequence = new Fragment[] {newFragments[sequence[0]], newFragments[sequence[1]], newFragments[sequence[2]], newFragments[sequence[3]]};
         newFragments = inSequence;

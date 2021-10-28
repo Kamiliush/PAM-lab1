@@ -12,6 +12,8 @@ public class Fragment1 extends Fragment {
 
 
     private OnButtonClickListener callback = null;
+
+
     public void setOnButtonClickListener(OnButtonClickListener callback){
         this.callback = callback;
     }

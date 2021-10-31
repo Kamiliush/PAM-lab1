@@ -9,4 +9,5 @@ Każde laboratorium to oddzielne wydanie, czyli:
 
 Poza tym gałąż main to najnowsze wydanie.
 
-Pozdrawiam
+Pozdrawiam,
+Kamil Zagajewski

@@ -104,6 +104,7 @@ public class MainActivity extends FragmentActivity implements OnButtonClickListe
             if (f instanceof  Fragment1) continue;
 
             FragmentTransaction transaction = fragmentManager.beginTransaction();
+            //transaction.setCustomAnimations(R.anim.fade_in, R.anim.fade_out);
             transaction.hide(f);
 
             transaction.addToBackStack(null);
@@ -119,11 +120,14 @@ public class MainActivity extends FragmentActivity implements OnButtonClickListe
 
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction transaction = fragmentManager.beginTransaction();
+        //transaction.setCustomAnimations(R.anim.fade_in, R.anim.fade_out);
 
         for(Fragment f: fragmentManager.getFragments()){
             if(f instanceof  Fragment1) continue;
             transaction.show(f);
         }
+
+
         transaction.addToBackStack(null);
         transaction.commit();
 

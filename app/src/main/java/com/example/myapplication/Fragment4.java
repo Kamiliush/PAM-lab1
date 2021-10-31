@@ -8,16 +8,13 @@ import androidx.lifecycle.ViewModelProvider;
 
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.transition.TransitionInflater;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link Fragment4#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class Fragment4 extends Fragment {
 
     //1.
@@ -32,6 +29,9 @@ public class Fragment4 extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        TransitionInflater transitionInflater = TransitionInflater.from(requireContext());
+        setEnterTransition(transitionInflater.inflateTransition(R.transition.fade));
+        setExitTransition(transitionInflater.inflateTransition(R.transition.fade));
 
     }
 
@@ -40,6 +40,8 @@ public class Fragment4 extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_4, container, false);
+
+
 
         //1.
         edit = view.findViewById(R.id.editTextNumberDecimal);

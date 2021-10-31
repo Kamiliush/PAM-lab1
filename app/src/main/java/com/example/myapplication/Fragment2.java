@@ -15,11 +15,6 @@ import android.widget.TextView;
 import androidx.lifecycle.Observer;
 
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link Fragment2#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class Fragment2 extends Fragment {
 
     //1.
